@@ -55,7 +55,6 @@ for gamma in [0.5, 0.9, 0.99, 0.999]:
 
 print(pd.DataFrame(data))
 
-# fig = px.line(data, x="Gamma", y="Iterations", color="Algorithm")
-fig = px.line(data, x="Gamma", y="Bellman Backups", color="Algorithm")
-# fig.write_image("iteration_counts.png")
-fig.show()
+fig = px.line(data, x="Gamma", y="Iterations", color="Algorithm")
+fig.write_image("iteration_counts.png")
+# fig.show()
